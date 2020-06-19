@@ -27,7 +27,7 @@ export default function Footer({pageData}) {
                                 display: 'flex',
                                 flexFlow: 'row'
                             }}>
-                                <i className='fas fa-envelope'/>
+                                <i aria-hidden className='fas fa-envelope'/>
                                 <a href='mailto:kontakt@emmerson-finanse.pl' style={{
                                     textDecoration: 'none',
                                     color: 'white',
@@ -39,7 +39,7 @@ export default function Footer({pageData}) {
                                 flexFlow: 'row',
                                 marginTop: 25+'px'
                             }}>
-                                <i className='fas fa-phone-alt'/>
+                                <i aria-hidden className='fas fa-phone-alt'/>
                                     <a href='tel:+48516000999' style={{
                                         textDecoration: 'none',
                                         color: 'white',
@@ -52,18 +52,18 @@ export default function Footer({pageData}) {
                                 {pageData?.items?.map((p,index)=>{
                                     if(p.child_items){
                                         return p.child_items.map((c, index)=>(
-                                            <Link href={{pathname: c.slug}}>
+                                            <Link href={{pathname: c.slug}} key={index}>
                                                 <a title={c.slug} style={style.href}>
-                                                    <li key={index}>{c.title}</li>
+                                                    <li>{c.title}</li>
                                                 </a>
                                             </Link>
                                         ))
                                     }
                                     else{
                                         return(
-                                            <Link href={{pathname: p.slug}}>
+                                            <Link href={{pathname: p.slug}} key={index}>
                                                 <a title={p.slug} style={style.href}>
-                                                    <li key={index}>{p.title}</li>
+                                                    <li>{p.title}</li>
                                                 </a>
                                             </Link>
                                         )

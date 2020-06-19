@@ -136,7 +136,7 @@ export const FormCalculate = memo(function FormCalculate (props) {
                         onClick={() =>
                             setRange(range > 0 ? range -1 : 0)}
                     >
-                        <i className='fas fa-minus'/>
+                        <i aria-hidden className='fas fa-minus'/>
                     </Button>
                     <Form.Control
                         type='text'
@@ -155,7 +155,7 @@ export const FormCalculate = memo(function FormCalculate (props) {
                         variant='outline-dark'
                         onClick={() => setRange(range < 420 ? range + 1 : 420)}
                     >
-                        <i className='fas fa-plus'/>
+                        <i aria-hidden className='fas fa-plus'/>
                     </Button>
 
                 </Form.Group>

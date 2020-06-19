@@ -83,7 +83,7 @@ export const Contact = () => {
                           helperText='Napisz do nas'
                           formState={formState}/>
             </Form.Row>
-            <Link href={{pathname: '/rodo'}} className='text-danger'><a title='RODO'>RODO (klauzula informacyjna)</a></Link>
+            <Link href={{pathname: '/rodo'}}><a title='RODO' className='text-danger'>RODO (klauzula informacyjna)</a></Link>
 
             <p style={{marginTop: 20+'px', fontSize: 0.6+'rem'}}>
                 W rozumieniu Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r.
@@ -110,10 +110,6 @@ export const Contact = () => {
                 bezpośredniego zgodnie z art. 172 Ust. z 16.07.2004r. Prawo telekomunikacyjne.
                 " />
             </Form.Group>
-
-
-
-
 
             <Button type='submit' variant='outline-fin' size='lg' style={{width: 100+'%'}}>
                 Wyślij

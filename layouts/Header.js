@@ -5,13 +5,12 @@ import {useEffect, useState} from "react";
 
 export const Menu = ({pages}) => {
 
-    console.log(pages);
     return(
         <>
             {pages.items?.map((page, index)=>{
                 if(page.child_items){
                     return(
-                        <NavDropdown title={page.title} id='main-menu-dropdown'>
+                        <NavDropdown title={page.title} id='main-menu-dropdown' key={index}>
                             {page.child_items.map((child, index)=>(
                                 <NavDropdown.Item key={index} href={child.slug} className='nav-link-fin'>{child.title}</NavDropdown.Item>
                             ))}
