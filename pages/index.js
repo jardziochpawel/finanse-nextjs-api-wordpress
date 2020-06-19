@@ -85,15 +85,15 @@ export default function Home() {
                         <div className="col-12" style={style.offer}>
                             <h3 style={{textDecoration: 'underline'}}>Oferujemy</h3>
                             <Image src="/img/1-01.svg" fluid />
-                            <span>Pomoc w wyborze <span className='text-danger'>najkorzystniejszej</span> oferty</span>
+                            <span>pomoc w wyborze <span className='text-danger'>najkorzystniejszej</span> oferty</span>
                             <Image src="/img/2-01.svg" fluid />
-                            <span>Wybór <span className='text-danger'>najdogodniejszego</span> systemu rat oraz waluty</span>
+                            <span>wybór <span className='text-danger'>najdogodniejszego</span> systemu rat oraz waluty</span>
                             <Image src="/img/3-01.svg" fluid />
-                            <span>Świadomo <span className='text-danger'>zaplanowanie</span> okresu kredytu</span>
+                            <span>świadome <span className='text-danger'>zaplanowanie</span> okresu kredytu</span>
                             <Image src="/img/4-01.svg" fluid />
-                            <span>Pomoc w <span className='text-danger'>skompletowaniu</span> wszystkich dokumentów</span>
+                            <span>pomoc w <span className='text-danger'>skompletowaniu</span> wszystkich dokumentów</span>
                             <Image src="/img/5-01.svg" fluid />
-                            <span><span className='text-danger'>Negocjacje</span> indywidualnych warunków w bankach</span>
+                            <span><span className='text-danger'>negocjacje</span> indywidualnych warunków w bankach</span>
                             <Image src="/img/6-01.svg" fluid />
                             <span><span className='text-danger'>kontrolę</span> nad całym procesem kredytowania</span>
                         </div>
