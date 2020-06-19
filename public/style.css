@@ -1,0 +1,198 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    font-size:.85em;
+}
+h3{
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.btn-outline-fin{
+    margin-top: 45px;
+    width: 200px;
+    border: 1px solid;
+    color: #e0001a!important;
+    border-color: #e0001a!important;
+    background-color: inherit;
+    border-radius: 0!important;
+}
+.btn-outline-fin:hover{
+    background-color: #e0001a;
+    color: white!important;
+}
+
+.nav-link-fin.nav-link{
+    color: #ffffff!important;
+    margin-left: 15px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff!important;
+    margin-left: 15px;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link{
+    color: #b8b8b8!important;
+}
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #b8b8b8!important;
+}
+
+.offer-section {
+    width: 100%;
+    background-color: #f7f7f7;
+    padding-bottom: 100px;
+}
+
+.bg-gradient-primary {
+    background: #1f1498!important;
+    background: linear-gradient(45deg,#321fdb,#1f1498)!important;
+    border-color: #1f1498!important;
+    border-radius: 10px;
+}
+.resultCard{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: 25px auto auto;
+}
+
+.cardGreen{
+    background-color: darkseagreen;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+.cardBlue{
+    background-color: lightskyblue;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+.cardDarkBlue{
+    background-color: royalblue;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: center;
+}
+
+.resultCardContainer{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.footer-box-container{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+    height: auto;
+    color: white;
+}
+
+.footer-card-box{
+    width: 100%;
+    max-width: 300px;
+}
+
+blockquote {
+    background:#EDEDED;
+    border-left:8px solid #e0001a;
+    box-shadow:0 3px 15px rgba(0,0,0,.15);
+    color:#666;
+    font-size:1.1em;
+    font-style:italic;
+    font-weight:300;
+    line-height:1.6;
+    margin:50px auto;
+    padding:1.2em 30px 1.2em 75px;
+    position:relative;
+    vertical-align:super;
+    width:60%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+blockquote::before {
+    color:#e0001a;
+    content:"\201C";
+    font-size:5em;
+    left:0;
+    position:absolute;
+    top:-35px;
+}
+
+blockquote p::before {
+    color: #ddd;
+    content:"\201C";
+    font-size:100em;
+    line-height: 0.65em;
+    right: .095em;
+    position:absolute;
+    z-index:-1;
+}
+
+blockquote span {
+    color: #e0001a;
+    display:block;
+    font-size:1.4em;
+    font-weight:300;
+    letter-spacing:1px;
+    margin-top:.5em;
+}
+
+.layer {
+    background-color: rgba(224, 0, 26, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+}
+
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+    will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
