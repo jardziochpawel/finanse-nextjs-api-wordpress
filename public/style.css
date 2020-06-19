@@ -64,14 +64,18 @@ h3{
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
     margin: 25px auto auto;
+    -webkit-box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.75);
+    margin-bottom: 50px;
 }
 
 .cardGreen{
-    background-color: darkseagreen;
+    background-color: #e0001a;
     font-family: 'Anton', sans-serif;
     color: white;
     font-size: 1.5rem;
@@ -82,7 +86,7 @@ h3{
 }
 
 .cardBlue{
-    background-color: lightskyblue;
+    background-color: #a35bf5;
     font-family: 'Anton', sans-serif;
     color: white;
     font-size: 1.5rem;

@@ -53,26 +53,51 @@ export default function Calculator() {
         }
 
         const R = calculate(price, range, ltv, annual);
-
+        const style = {
+            column:{
+                display: 'flex',
+                flexFlow: 'column',
+                alignItems: 'center',
+                margin: 'auto'
+            },
+            row: {
+                display: 'flex',
+                flexFlow: 'row',
+                flexWrap: 'wrap',
+                justifyContent: 'center'
+            }
+        }
         return(
-            <div className='row'>
-                <div className="resultCard cardGreen">
-                    <div className="resultContent">
-                        Rata:
-                        <h1>{R} zł</h1>
+            <div style={style.row}>
+                <div style={style.column}>
+                    <div className="resultCard cardGreen">
+                        <div className="resultContent">
+                            <h1>{R} zł</h1>
+                        </div>
                     </div>
+                    <h3>
+                        Rata
+                    </h3>
                 </div>
-                <div className="resultCard cardBlue">
-                    <div className="resultContent">
-                        Całkowity kwota do spłaty:
-                        <h1>{(R*range).toFixed(0)} zł</h1>
+                <div style={style.column}>
+                    <div className="resultCard cardBlue">
+                        <div className="resultContent">
+                            <h1>{(R*range).toFixed(0)} zł</h1>
+                        </div>
                     </div>
+                    <h3>
+                        Całkowity kwota do spłaty
+                    </h3>
                 </div>
-                <div className="resultCard cardDarkBlue">
-                    <div className="resultContent">
-                        Koszt kredytu:
-                        <h1>{((R*range)-(price-(price * (ltv/100)))).toFixed(0)} zł</h1>
+                <div style={style.column}>
+                    <div className="resultCard cardDarkBlue">
+                        <div className="resultContent">
+                            <h1>{((R*range)-(price-(price * (ltv/100)))).toFixed(0)} zł</h1>
+                        </div>
                     </div>
+                    <h3>
+                        Koszt kredytu
+                    </h3>
                 </div>
             </div>
         );
