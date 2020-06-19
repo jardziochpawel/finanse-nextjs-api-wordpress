@@ -43,7 +43,7 @@ export default function Header({setPageData, pageData}) {
 
     useEffect(() => {
         async function loadData() {
-            const response = await fetch('http://test.totaldom.pl/wp-json/menus/v1/menus/menu');
+            const response = await fetch('https://api.emmerson-finanse.pl/wp-json/menus/v1/menus/menu');
             const pagesData = await response.json();
             setPageData(pagesData);
             setPages(pagesData);

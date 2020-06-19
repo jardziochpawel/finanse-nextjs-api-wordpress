@@ -2,9 +2,9 @@ import { useRouter } from 'next/router';
 import {useEffect, useState} from "react";
 import fetch from "isomorphic-unfetch";
 import Spinner from "react-bootstrap/Spinner";
-import Footer from "./layouts/Footer";
-import Header from "./layouts/Header";
-import {FadeInSection} from "./layouts/FadeInSection";
+import Footer from "../layouts/Footer";
+import Header from "../layouts/Header";
+import {FadeInSection} from "../layouts/FadeInSection";
 
 function Page({ pageData }) {
     const router = useRouter();
@@ -14,7 +14,7 @@ function Page({ pageData }) {
 
     useEffect(() => {
         async function loadData() {
-            const response = await fetch('http://test.totaldom.pl/wp-json/wp/v2/pages?slug='+router.query.page);
+            const response = await fetch('https://api.emmerson-finanse.pl/wp-json/wp/v2/pages?slug='+router.query.page);
             const pageData = await response.json();
 
             setPage(pageData);
@@ -63,7 +63,7 @@ Page.getInitialProps = async (ctx) => {
         }
     }
 
-    const res = await fetch('http://test.totaldom.pl/wp-json/wp/v2/pages?slug='+query.page)
+    const res = await fetch('https://api.emmerson-finanse.pl/wp-json/wp/v2/pages?slug='+query.page)
     const pageData = await res.json()
 
     return {

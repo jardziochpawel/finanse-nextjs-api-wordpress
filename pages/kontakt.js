@@ -1,9 +1,9 @@
-import Header from "./layouts/Header";
-import Footer from "./layouts/Footer";
+import Header from "../layouts/Header";
+import Footer from "../layouts/Footer";
 import {useState} from "react";
-import GoogleMaps from "./layouts/GoogleMaps";
-import {FadeInSection} from "./layouts/FadeInSection";
-import {Contact} from "./forms/Contact";
+import GoogleMaps from "../layouts/GoogleMaps";
+import {FadeInSection} from "../layouts/FadeInSection";
+import {Contact} from "../forms/Contact";
 
 export const ContactBox = () => {
     const style = {

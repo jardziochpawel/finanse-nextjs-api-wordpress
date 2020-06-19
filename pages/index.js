@@ -1,12 +1,12 @@
-import Header from './layouts/Header'
+import Header from '../layouts/Header'
 import {Button, Container} from "react-bootstrap";
-import {Contact} from "./forms/Contact";
-import {useWindowSize} from "./layouts/Resize";
+import {Contact} from "../forms/Contact";
+import {useWindowSize} from "../layouts/Resize";
 import Image from "react-bootstrap/Image";
-import Calculator from "./layouts/calculator";
-import Footer from "./layouts/Footer";
+import Calculator from "../layouts/calculator";
+import Footer from "../layouts/Footer";
 import {useState} from "react";
-import {FadeInSection} from "./layouts/FadeInSection";
+import {FadeInSection} from "../layouts/FadeInSection";
 
 export default function Home() {
     const [pageData, setPageData] = useState([]);
