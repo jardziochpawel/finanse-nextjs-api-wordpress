@@ -1,7 +1,7 @@
 import Head from "next/head";
 import {Navbar, Nav, Container, Image, NavDropdown} from "react-bootstrap";
 import fetch from 'isomorphic-unfetch';
-import {useEffect, useState, forwardRef} from "react";
+import {useEffect, useState} from "react";
 
 export const Menu = ({pages}) => {
 
@@ -63,6 +63,7 @@ export default function Header({setPageData, pageData}) {
                 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
                 <link href="https://fonts.googleapis.com/css?family=Montserrat:300&subset=latin-ext" rel="stylesheet"/>
                 <link href='/style.css' rel="stylesheet" />
+                <script src="https://kit.fontawesome.com/d88afa1ad5.js" crossOrigin="anonymous"></script>
             </Head>
 
             <Container>
