@@ -117,11 +117,15 @@ export default function Home() {
                          }}
                 >
                     <div className="container" style={{paddingTop: 200+'px', paddingBottom: 200+'px', color: 'white', position: 'relative', zIndex: 111}}>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestias placeat rem rerum ut veniam. Aut blanditiis dolor eos incidunt molestias, nesciunt ut. Ab aut facilis laborum quibusdam vitae voluptatem?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestias placeat rem rerum ut veniam. Aut blanditiis dolor eos incidunt molestias, nesciunt ut. Ab aut facilis laborum quibusdam vitae voluptatem?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestias placeat rem rerum ut veniam. Aut blanditiis dolor eos incidunt molestias, nesciunt ut. Ab aut facilis laborum quibusdam vitae voluptatem?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestias placeat rem rerum ut veniam. Aut blanditiis dolor eos incidunt molestias, nesciunt ut. Ab aut facilis laborum quibusdam vitae voluptatem?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestias placeat rem rerum ut veniam. Aut blanditiis dolor eos incidunt molestias, nesciunt ut. Ab aut facilis laborum quibusdam vitae voluptatem?
+                        <h1 style={{color: 'white', textAlign: 'center', fontFamily: 'Arial, sans-serif', fontWeight: 700}}>Profesjonaliści w 100%</h1>
+                        <p style={{margin: 'auto', paddingTop: 50+'px', fontSize: 1.4+'rem', lineHeight: 1.6+'rem', fontFamily: 'Arial, sans-serif', fontWeight: 500, width: 80+'%', textAlign: 'center'}}>
+                            Gwarantujemy doskonałą znajomość procedur bankowych, przejmujemy za klienta większość
+                            formalności związanych z aplikacją kredytową oraz czuwamy nad prawidłowym przebiegiem
+                            procesu kredytowego.
+                            <br/><br/>
+                            My po prostu wiemy, gdzie i jak uzyskać atrakcyjny kredyt hipoteczny.
+
+                        </p>
                     </div>
 
                     <div className="layer"/>
