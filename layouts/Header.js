@@ -40,8 +40,8 @@ export default function Header({setPageData, pageData}) {
     const style = {
         navBar: {
             backgroundColor: '#e0001a',
-            webkitBoxShadow: '0px 20px 55px 2px rgba(0,0,0,0.5)',
-            mozBoxShadow: '0px 20px 55px 2px rgba(0,0,0,0.5)',
+            WebkitBoxShadow: '0px 20px 55px 2px rgba(0,0,0,0.5)',
+            MozBoxShadow: '0px 20px 55px 2px rgba(0,0,0,0.5)',
             boxShadow: '0px 20px 55px 2px rgba(0,0,0,0.5)',
         }
     }
@@ -74,7 +74,7 @@ export default function Header({setPageData, pageData}) {
 
             <Container>
                 <Navbar expand="lg" style={style.navBar} variant='dark' sticky='top' fixed='top'>
-                    <Navbar.Brand href="/"><Image src={'http://www2.emmerson.pl/emmerson_finanse.gif'}/></Navbar.Brand>
+                    <Navbar.Brand href="/"><Image src={'/img/emmerson_finanse.gif'}/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" >
                         <Nav className="ml-auto">

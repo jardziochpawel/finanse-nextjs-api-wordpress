@@ -1,5 +1,6 @@
 import {FadeInSection} from "./FadeInSection";
 import Link from "next/link";
+import {Image} from "react-bootstrap";
 
 export default function Footer({pageData}) {
     const style = {
@@ -14,7 +15,7 @@ export default function Footer({pageData}) {
                 <div className='container' style={{paddingTop: 150+'px', paddingBottom: 150+'px'}}>
                     <div className="container-fluid footer-box-container">
                         <div className="footer-card-box">
-                            <img src='http://www2.emmerson.pl/emmerson_finanse.gif' alt='Emmerson Finanse S.A.'/><br/><br/>
+                            <Image src='/img/emmerson_finanse.gif' alt='Emmerson Finanse S.A.'/><br/><br/>
                             Emmerson Finanse S.A.<br/>
                             Zgrupowania AK "Kampinos" 2,<br/>
                             01-943 Warszawa<br/>
