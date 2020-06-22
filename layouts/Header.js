@@ -12,14 +12,21 @@ export const Menu = ({pages}) => {
                     return(
                         <NavDropdown title={page.title} id='main-menu-dropdown' key={index}>
                             {page.child_items.map((child, index)=>(
-                                <NavDropdown.Item key={index} href={child.slug} className='nav-link-fin'>{child.title}</NavDropdown.Item>
+                                <NavDropdown.Item key={index} href={'/page/'+child.slug} className='nav-link-fin'>{child.title}</NavDropdown.Item>
                             ))}
                         </NavDropdown>
 
                 )
                 }
+                if(page.slug === 'kontakt'){
+
+                    console.log(page.slug);
+                    return(
+                        <Nav.Link key={index} href={'/'+page.slug} className='nav-link-fin'>{page.title}</Nav.Link>
+                    )
+                }
                 return(
-                    <Nav.Link key={index} href={page.slug} className='nav-link-fin'>{page.title}</Nav.Link>
+                    <Nav.Link key={index} href={'/page/'+page.slug} className='nav-link-fin'>{page.title}</Nav.Link>
                 )
             }
         )}

@@ -3,12 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "preexport": "npm run build",
-    "export": "next export",
-    "prestart": "npm run export",
-    "start": "serve out"
+    "start": "next start -p 5000"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",

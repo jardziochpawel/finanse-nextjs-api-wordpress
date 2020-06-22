@@ -2,19 +2,20 @@ import { useRouter } from 'next/router';
 import {useEffect, useState} from "react";
 import fetch from "isomorphic-unfetch";
 import Spinner from "react-bootstrap/Spinner";
-import Footer from "../layouts/Footer";
-import Header from "../layouts/Header";
-import {FadeInSection} from "../layouts/FadeInSection";
+import Footer from "../../layouts/Footer";
+import Header from "../../layouts/Header";
+import {FadeInSection} from "../../layouts/FadeInSection";
 
-function Page({ pageData }) {
+function Slug({ pageData }) {
+
     const router = useRouter();
-
+    console.log(router);
     const [page, setPage] = useState(pageData);
     const [data, setPageData] = useState([]);
 
     useEffect(() => {
         async function loadData() {
-            const response = await fetch('https://api.emmerson-finanse.pl/wp-json/wp/v2/pages?slug='+router.query.page);
+            const response = await fetch('https://api.emmerson-finanse.pl/wp-json/wp/v2/pages?slug='+router.query.slug);
             const pageData = await response.json();
 
             setPage(pageData);
@@ -43,7 +44,7 @@ function Page({ pageData }) {
             <FadeInSection>
                 <div className="container" style={{marginTop: 100+'px'}}>
                     <div className="container-fluid" style={{fontSize: 1.2+'rem'}}>
-                        {page && RenderContent(page[0].content.rendered) }
+                        {page && RenderContent(page[0]?.content.rendered) }
                     </div>
                 </div>
             </FadeInSection>
@@ -52,7 +53,7 @@ function Page({ pageData }) {
     )
 }
 
-Page.getInitialProps = async (ctx) => {
+Slug.getInitialProps = async (ctx) => {
     const {query} = ctx;
 
     if(!ctx.req){
@@ -63,7 +64,7 @@ Page.getInitialProps = async (ctx) => {
         }
     }
 
-    const res = await fetch('https://api.emmerson-finanse.pl/wp-json/wp/v2/pages?slug='+query.page)
+    const res = await fetch('https://api.emmerson-finanse.pl/wp-json/wp/v2/pages?slug='+query.slug)
     const pageData = await res.json()
 
     return {
@@ -73,4 +74,4 @@ Page.getInitialProps = async (ctx) => {
     }
 }
 
-export default Page
+export default Slug
