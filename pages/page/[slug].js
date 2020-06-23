@@ -9,7 +9,7 @@ import {FadeInSection} from "../../layouts/FadeInSection";
 function Slug({ pageData }) {
 
     const router = useRouter();
-    console.log(router);
+
     const [page, setPage] = useState(pageData);
     const [data, setPageData] = useState([]);
 

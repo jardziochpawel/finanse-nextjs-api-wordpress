@@ -19,8 +19,6 @@ export const Menu = ({pages}) => {
                 )
                 }
                 if(page.slug === 'kontakt'){
-
-                    console.log(page.slug);
                     return(
                         <Nav.Link key={index} href={'/'+page.slug} className='nav-link-fin'>{page.title}</Nav.Link>
                     )
