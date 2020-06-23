@@ -53,20 +53,16 @@ export default function Footer({pageData}) {
                                 {pageData?.items?.map((p,index)=>{
                                     if(p.child_items){
                                         return p.child_items.map((c, index)=>(
-                                            <Link href={{pathname: '/page/'+c.slug}} key={index}>
-                                                <a title={c.slug} style={style.href}>
-                                                    <li>{c.title}</li>
-                                                </a>
-                                            </Link>
+                                            <a title={c.slug} style={style.href} href={'/page/'+c.slug} key={index}>
+                                                <li>{c.title}</li>
+                                            </a>
                                         ))
                                     }
                                     else{
                                         return(
-                                            <Link href={{pathname: '/page/'+p.slug}} key={index}>
-                                                <a title={p.slug} style={style.href}>
-                                                    <li>{p.title}</li>
-                                                </a>
-                                            </Link>
+                                            <a key={index} title={p.slug} href={'/page/'+p.slug} style={style.href}>
+                                                <li>{p.title}</li>
+                                            </a>
                                         )
                                     }
                                 })}
